@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="acadgild">
+	<head>
+		<title>Assignment 11.4</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+		<script>
+			var myapp = angular.module('acadgild', []);
+
+			myapp.controller('mycontroller1', function($scope) {
+				$scope.name = "Garima Agarwal";
+			});
+
+		</script>
+	</head>
+	<body>
+		<div ng-controller="mycontroller1">
+			<p ng-bind="name"></p>
+		</div>
+	</body>
+</html>
